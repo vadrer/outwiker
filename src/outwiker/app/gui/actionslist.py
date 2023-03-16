@@ -31,6 +31,7 @@ from outwiker.app.actions.reloadwiki import ReloadWikiAction
 from outwiker.app.actions.removepage import RemovePageAction
 from outwiker.app.actions.renamepage import RenamePageAction
 from outwiker.app.actions.save import SaveAction
+from outwiker.app.actions.perl import PerlAction
 from outwiker.app.actions.search import (SearchAction,
                                          SearchAndReplaceAction,
                                          SearchNextAction,
@@ -138,6 +139,8 @@ actionsList = [
     ActionInfo(SwitchToTreeAction, None),
     ActionInfo(SwitchToAttachmentsAction, None),
     ActionInfo(SwitchToTagsCloudAction, None),
+
+    ActionInfo(PerlAction, HotKey("F9")),
 
     ActionInfo(OpenAttachFolderAction, None),
     ActionInfo(RemoveAttachesActionForAttachPanel,

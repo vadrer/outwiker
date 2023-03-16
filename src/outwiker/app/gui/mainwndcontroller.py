@@ -31,6 +31,7 @@ from outwiker.app.actions.tabs import (AddTabAction,
                                        CloseTabAction,
                                        PreviousTabAction,
                                        NextTabAction)
+from outwiker.app.actions.perl import PerlAction
 import outwiker.app.actions.clipboard as clipboard
 import outwiker.app.actions.tags as tags
 
@@ -115,6 +116,7 @@ class MainWndController:
             GoToPrevSiblingAction,
             OpenAttachFolderAction,
             SetStyleToBranchAction,
+            PerlAction,
         ]
 
         # Идентификаторы для пунктов меню последних открытых вики

@@ -69,6 +69,7 @@ from outwiker.gui.trayicon import getTrayIconController
 from outwiker.gui.controls.toolbar2 import ToolBar2Container
 from outwiker.gui.controls.toastercontroller import ToasterController
 from outwiker.gui.statusbar import StatusBarController
+from outwiker.app.actions.perl import PerlAction
 
 from outwiker.pages.wiki.wikipagecontroller import WikiPageController
 from outwiker.pages.html.htmlpagecontroller import HtmlPageController
@@ -494,6 +495,12 @@ class MainWindow(wx.Frame):
         menu.AppendSeparator()
 
         actionController.appendMenuItem(SetStyleToBranchAction.stringId, menu)
+
+        menu.AppendSeparator()
+
+        actionController.appendMenuItem(PerlAction.stringId, menu)
+
+        menu.AppendSeparator()
 
     def _createHelpMenu(self):
         menu = self.menuController[guidefines.MENU_HELP]
